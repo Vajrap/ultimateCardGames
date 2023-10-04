@@ -1,0 +1,19 @@
+body {
+    padding: 0;
+    margin: 0
+}
+.scoreBoardView{
+    background-color: rgb(7, 87, 0);
+    width: 100%;
+    height: 10vh;
+}
+.gameView{
+    background-color: rgb(203, 207, 179);
+    width: 100%;
+    height: 85vh;
+}
+.trailingView{
+    background-color:blueviolet;
+    width: 100%;
+    height: 5vh;
+}
