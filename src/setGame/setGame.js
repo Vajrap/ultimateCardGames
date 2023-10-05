@@ -11,18 +11,18 @@ class SetGame extends Game {
     createDeckOfCards() {
         let i = 0
         let deckOfCards = []
-        const shapes = ['oval', 'squiggles', 'diamonds']
+        const shapes = ['diamond', 'squiggle', 'oval']
         const colors = ['red', 'purple', 'green']
-        const numbers = ['one', 'two', 'three']
+        const numbers = [1, 2, 3]
         const shadings = ['solid', 'striped', 'outlined']
 
         for (const shape of shapes){
             for (const color of colors){
                 for (const number of numbers){
                     for (const shading of shadings){
-                        const card = new setGameCard(shape, color, number, shading, i)
+                        const card = new SetGameCard(shape, color, number, shading, i)
                         deckOfCards.push(card)
-                        i++
+                        i ++
                     }
                 }
             }
@@ -116,5 +116,13 @@ class SetGame extends Game {
 
     startNewGame(){
         game = new SetGame()
+    }
+}
+
+function initSetGameView(){
+    for (card of game.cardsOnTable){
+        cardToShow = new SetGameCardView(card).createCard()
+        console.log(cardToShow)
+        gameView.appendChild(cardToShow)
     }
 }

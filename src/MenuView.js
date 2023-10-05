@@ -24,7 +24,17 @@ class MenuView {
         gameView.appendChild(gameMenu)
     }
 
-    gameSelect(game) {
+    initGame(gameClass){
+        game = new gameClass()
+    }
 
+    gameSelect(game) {
+        gameView.textContent = '' //
+        this.initGame(game)
+        console.log(game)
+        if (game === SetGame){
+            console.log(`initSetGameView`)
+            initSetGameView() 
+        }
     }
 }

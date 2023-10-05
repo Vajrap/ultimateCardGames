@@ -1,0 +1,30 @@
+/* .card {
+    width: 15 vw;
+    height: 3/2 * vw;
+    border: 1vh solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.setGameCard {
+    height: 25vh;
+    width: 16vh;
+    margin: 0.5vh;
+    border-radius: 2vh;
+    box-shadow: 0 2px 5px rgba(black, .2);
+    background-color: aliceblue;
+    border: 0.5vh solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardShape {
+    padding: 2px;
+    margin-left: -1px;
+}
+
+svg {
+    width: 30%;
+}
